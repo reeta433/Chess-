@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background: #222;
+}
+
+.chess-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  border: 3px solid #333;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.light {
+  background: #f0d9b5;
+}
+
+.dark {
+  background: #b58863;
+}
+
+.piece {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+.status {
+  background-color: #ffffff;
+  color: #302c2c;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
